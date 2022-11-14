@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+/* ---------- html element style part ------------ */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+p, li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+
+h1, h2, h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+}
+
+
+/* -------------- utility classes ------------- */
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.lg-heading{
+    font-size: 3.5rem;
+}
+
+.md-heading{
+    font-size: 2.2rem;
+}
+
+.small-p{
+    font-size: 1rem;
+}
+
+.text-red{
+    color: rgb(248, 0, 0);
+}
+
+.text-light{
+    color: #f4f4f4;
+}
+
+.text-black{
+    color: #333;
+}
+
+.text-gray{
+    color: gray;
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+
+.btn-primary{
+    background-color: #fff;
+    border-radius: 10rem;
+}
+
+.btn-secondary{
+    border-radius: 1.5em;
+    background-color: #fff;
+    border: 2px solid rgb(212, 58, 58);
+    color: rgb(216, 39, 39);
+}
+
+.btn-hover:hover{
+    background-color: lightgrey;
+}
+
+.bg-dark{
+    background-color: #11577a;
+}
+
+.btn-secondaryk-m{
+    border-radius: 1.5em;
+    background-color: #fff;
+    color: lightcoral;
+}
+
+
+/* ---------- heading style ----------- */
+.header{
+    position: relative;
+    height: 95vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../img/1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header .logo,
+.header .navbar a{
+    color: white;
+}
+
+.logo{
+    float: left;
+}
+
+.navbar{
+    padding: 1rem;
+}
+
+.navbar{
+    color: white;
+}
+
+.navbar .nav-items{
+    float: right;
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.navbar .nav-item{
+    display: inline-block;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.navbar a:link,
+.navbar a:visited{
+    color: #f4f4f4;
+}
+
+.navbar a{
+    padding-bottom: 0.3rem;
+}
+
+.navbar a:hover{
+    border-bottom: 1px solid #fff;
+}
+
+.navbar::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ---------------------- header content style ----------------------- */
+
+.header-content{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)); */
+}
+
+.header-content h1{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+/* ---------------- sc section styling ------------------ */
+
+.sc{
+    background-color: lightgray;
+    padding: 10rem 0;
+}
+
+.sc::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.row{
+    height: 350px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px 0px #aaa;
+}
+
+.row1{
+    margin-bottom: 10rem;
+}
+
+.row1 .img-box, .row2 .text-box{
+    float: left;
+    width: 50%;
+}
+
+
+.row2 .img-box, .row1 .text-box{
+    float: right;
+    width: 50%;
+}
+
+
+.row .img-box{
+    height: 100%;
+}
+
+.row .text-box{
+    padding: 3rem;
+}
+
+.row .img-box img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.row::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+
+/* ------------------- moresports --------------------- */
+
+.moresports{
+    padding: 10rem 0;
+}
+
+.box-wrapper{
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.253);
+}
+
+.moresports::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.box{
+    width: 33.333333%;
+    float: left;
+    padding: 2rem;
+    text-align: center;
+}
+
+
+.box1{
+    background-color: #586392;
+    color: #fff;
+}
+
+.box2{
+    background-color: rgb(6, 173, 179);
+    color: #fff;
+}
+
+.box-wrapper::after{
+    display: block;
+    content: '';
+    clear: both;
+}
+
+
+/* -------------- footer style --------------- */
+.footer{
+    background: #263238;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.social-media-links i{
+    margin: 2rem;
+}
+
+
+
+/* ---------------About page style-------------- */
+
+.about{
+    padding: 5rem 0;
+}
+
+.about-heading{
+    border-bottom: 4px solid rgb(193, 68, 231);
+}
+
+.container1{
+    position: relative;
+    max-width: 1200px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.container1::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.about-padding{
+    padding: 2rem;
+}
+
+.btn-secondary-search{
+    position: absolute;
+    border-radius: 1.5em;
+    background-color: rgb(193, 68, 231);
+    border: 2px solid #fff;
+    color: #fff;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.btn-secondary-search::after{
+    content: "";
+    display: block;
+    clear: both;
+
+}
+
+.btn-secondary-search:hover{
+    background-color: rgb(193, 68, 231);
+    color:  #263238;
+}
+
+
+/* --------------contact page styling------------- */
+
+.contact-form{
+    padding: 1.2rem 0;
+    background-color: #f7f7f7;
+}
+
+.form-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.form-wrapper .my-address i{
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.form-wrapper .my-address h2{
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.form-wrapper .my-address{
+    background-color: #fff;
+    width: 49%;
+    float: left;
+    padding: 1rem;
+    height: 700px;
+}
+
+.form-wrapper .address-group{
+    margin-bottom: 0.7rem;
+}
+
+
+/* ----------------form styling----------------- */
+
+.form-wrapper .form{
+    height: 700px;
+    background-color: #fff;
+    width: 49%;
+    float: right;
+    padding: 1rem;
+}
+
+.form h1::after{
+    content: '';
+    width: 100%;
+    border: 3px solid rgb(248, 0, 0);
+    display: block;
+}
+
+.form-wrapper .form label{
+    display: block;
+}
+
+.form-wrapper .form input{
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.form-wrapper .form .form-group{
+    margin-bottom: 1.2rem;
+} 
+
+.form-wrapper .form label::after{
+    content: '*';
+    color: rgb(218, 37, 37);
+}
+
+.form-wrapper .form textarea{
+    width: 100%;
+    height: 240px;
+    padding: 1rem;
+}
+
+.form-btn{
+    display: block;
+    margin: 0 auto;
+    padding: 0.5em 3em;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    background-color: rgb(190, 15, 15);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* -------------------make responsive------------------ */
+@media (max-width:500px){
+    :root{
+        font-size: 50%;
+    }
+    .navbar .nav-items, .navbar .logo{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .row{
+        height: auto;
+        width: 100%;
+    }
+    .row .img-box,
+    .row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .moresports .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .box1{
+        margin-bottom: 2rem;
+    }
+
+    .box2{
+        margin-bottom: 2rem;
+    }
+
+    .form-wrapper .form{
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+
+    .form-wrapper .my-address{
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+
+    .paragraph{
+        display: none;
+    }
+}
+
+@media (orientation: landscape) and (max-height:500px){
+    .header{
+        height: 90vmax;
+    }
+}
